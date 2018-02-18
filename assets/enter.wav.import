@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/enter.wav-f9367ba1b600109738633feba90ef44e.sample"
+
+[deps]
+
+source_file="res://assets/enter.wav"
+source_md5="5feef1afed2dd9773485f11d14925589"
+
+dest_files=[ "res://.import/enter.wav-f9367ba1b600109738633feba90ef44e.sample" ]
+dest_md5="bfd28b6a4e5057c0e9147495d8391b6d"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

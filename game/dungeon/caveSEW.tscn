@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game/dungeon/walls.gd" type="Script" id=1]
+[ext_resource path="res://assets/caveSEW.png" type="Texture" id=2]
+
+[node name="CaveSEW" type="Node2D" index="0"]
+
+position = Vector2( 100, 100 )
+scale = Vector2( 1.5, 1.5 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
+
+input_pickable = false
+collision_layer = 2
+collision_mask = 7
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" index="0"]
+
+build_mode = 1
+polygon = PoolVector2Array( -65.4114, -24.9704, -46.651, -32.1553, -35.8737, -39.3401, -13.92, -41.7351, 1.24795, -45.3275, 30.3865, -37.3443, 66.7099, -21.378, 65.9116, -65.6845, -65.8106, -65.6845 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D" index="1"]
+
+build_mode = 1
+polygon = PoolVector2Array( -65.5964, 27.739, -52.356, 29.5927, -37.7914, 47.335, -25.3454, 65.0772, -64.802, 65.0772 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D" index="2"]
+
+build_mode = 1
+polygon = PoolVector2Array( 27.3517, 64.8124, 34.5016, 48.1294, 57.8048, 27.4742, 64.9547, 27.4742, 66.5435, 65.6068 )
+
+

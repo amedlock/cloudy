@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://game/enemy/winged.gd" type="Script" id=1]
+[ext_resource path="res://assets/dungeon.png" type="Texture" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 10.0
+height = 13.1321
+
+[node name="KinematicBody" type="KinematicBody2D" index="0"]
+
+input_pickable = false
+collision_layer = 4
+collision_mask = 3
+collision/safe_margin = 0.001
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 32, 32 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Audio" type="AudioStreamPlayer" parent="." index="1"]
+
+stream = null
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+
+position = Vector2( 1.90735e-06, 1.45995 )
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="." index="3"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+

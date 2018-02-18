@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/snake_warn.wav-2c980922b81922e2a53624b8b9375422.sample"
+
+[deps]
+
+source_file="res://assets/snake_warn.wav"
+source_md5="15c522993aab15aa3e7a3db79e315efb"
+
+dest_files=[ "res://.import/snake_warn.wav-2c980922b81922e2a53624b8b9375422.sample" ]
+dest_md5="5a07dfbb64dbb75b37ff3837acdce4c2"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

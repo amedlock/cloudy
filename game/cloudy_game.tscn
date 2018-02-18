@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://game/cloudy_game.gd" type="Script" id=1]
+[ext_resource path="res://game/map/MapMode.tscn" type="PackedScene" id=2]
+[ext_resource path="res://game/dungeon/Dungeon.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/title.jpg" type="Texture" id=4]
+[ext_resource path="res://game/Title.gd" type="Script" id=5]
+
+[node name="Cloudy" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="MapMode" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="DungeonMode" parent="." index="1" instance=ExtResource( 3 )]
+
+[node name="Title" type="Sprite" parent="." index="2"]
+
+position = Vector2( -1.00005, -1.00002 )
+scale = Vector2( 1.6025, 1.99583 )
+texture = ExtResource( 4 )
+centered = false
+script = ExtResource( 5 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+

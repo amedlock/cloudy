@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/dungeon.png" type="Texture" id=1]
+[ext_resource path="res://game/enemy/smoke.gd" type="Script" id=2]
+
+[node name="Smoke" type="Sprite"]
+
+z_index = 4
+texture = ExtResource( 1 )
+hframes = 3
+region_enabled = true
+region_rect = Rect2( 128, 64, 32, 32 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform", "Z Index" ]
+time_per_frame = 0.2
+total = 2.5
+
+

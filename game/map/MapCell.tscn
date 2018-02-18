@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/cloudy.png" type="Texture" id=1]
+[ext_resource path="res://game/map/map_cell.gd" type="Script" id=2]
+
+[node name="MapCell" type="Sprite"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Offset" ]
+
+

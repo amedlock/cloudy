@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/dragon2.wav-55d4bd3efaf7ed8f33bd775539b2e4e8.sample"
+
+[deps]
+
+source_file="res://assets/dragon2.wav"
+source_md5="64b44ada226c025e72c0f16d9e0699fc"
+
+dest_files=[ "res://.import/dragon2.wav-55d4bd3efaf7ed8f33bd775539b2e4e8.sample" ]
+dest_md5="9b9033ecef8fc7e7ca4aa28dfcd8cad0"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/kill_monster.wav-a708cde10b6f2d515c8d034d92918f2b.sample"
+
+[deps]
+
+source_file="res://assets/kill_monster.wav"
+source_md5="7c5334b3c32d3be3d9efc56ca3d84333"
+
+dest_files=[ "res://.import/kill_monster.wav-a708cde10b6f2d515c8d034d92918f2b.sample" ]
+dest_md5="b3d6107d8cb482e2276d67ef8bbf3c82"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

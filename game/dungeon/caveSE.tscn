@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/caveSE.png" type="Texture" id=1]
+[ext_resource path="res://game/dungeon/walls.gd" type="Script" id=2]
+
+[node name="CaveSE" type="Node2D" index="0"]
+
+position = Vector2( 100, 100 )
+scale = Vector2( 1.5, 1.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
+
+input_pickable = false
+collision_layer = 2
+collision_mask = 7
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script = ExtResource( 2 )
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" index="0"]
+
+build_mode = 1
+polygon = PoolVector2Array( -25.8943, 64.84, -51.4404, 28.9158, -39.0665, 0.575615, -43.0581, -21.3781, -43.0581, -34.1511, -32.2809, -41.336, -13.1213, -41.336, 5.24, -46.1259, 35.576, -36.5461, 55.5339, -28.1638, 65.1137, -26.5671, 65.1137, -64.8863, -65.411, -64.4871, -64.2135, 65.2392 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D" index="1"]
+
+build_mode = 1
+polygon = PoolVector2Array( 27.3517, 64.8124, 34.5016, 48.1294, 57.8048, 27.4742, 64.9547, 27.4742, 66.5435, 65.6068 )
+
+

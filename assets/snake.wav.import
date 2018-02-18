@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/snake.wav-859d0ef0dbc729e2eeb8c64f12914c48.sample"
+
+[deps]
+
+source_file="res://assets/snake.wav"
+source_md5="eec0bbbd44d2c35adbf760ac1caa211c"
+
+dest_files=[ "res://.import/snake.wav-859d0ef0dbc729e2eeb8c64f12914c48.sample" ]
+dest_md5="f1e86f4b54459d0c7b9390309d87e472"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
