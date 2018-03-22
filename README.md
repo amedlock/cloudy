@@ -8,3 +8,6 @@ You need axe from red mountains to pass forests.
 You need a key from purple mountains to pass gates (in walls).
 
 Get both pieces of the crown in the cloudy mountain to win.
+
+![SS](ss1.png)
+![SS](ss2.png)
