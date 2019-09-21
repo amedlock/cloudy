@@ -27,7 +27,7 @@ func _ready():
 	tiles = $Tiles
 	if !initialized:
 		initialized = true
-		random = Util.make_random( randi() )
+		random = Util.Random.new()
 		astar = AStar.new()
 		tiles.init( Width, Height, CellSize )
 		$Dark.init( FogPerCell * Width, FogPerCell * Height, 192 / FogPerCell )

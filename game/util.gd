@@ -1,13 +1,16 @@
 
 class Random:
-	var cur_seed = 0
+	var rng ;
+	
+	func _init():
+		self.rng = RandomNumberGenerator.new()
+		self.rng.seed = randi()
 	
 	func next_float():
-		return randf()
+		return self.rng.randf()
 	
 	func next_int():
-		rand_seed(cur_seed)
-		return randi()
+		return self.rng.randi()
 		
 	func next_bool():
 		return next_int() > 0x80000000 / 2
@@ -33,10 +36,6 @@ class Random:
 			result.append( items[value] )
 		return result
 
-static func make_random( rseed ):
-	var r = Random.new()
-	r.cur_seed = rseed
-	return r
 
 static func choice( items ):
 		if items==null or items.empty():
@@ -46,7 +45,7 @@ static func choice( items ):
 static func shuffle( items ):
 		if items==null or items.empty():
 			return []
-		return make_random( randi() ).shuffle( items )
+		return Random.new().shuffle( items )
 
 
 static func between( val, lo, hi ):

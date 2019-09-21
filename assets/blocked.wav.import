@@ -7,10 +7,7 @@ path="res://.import/blocked.wav-373e33f2694486848a8e0d3a02e11988.sample"
 [deps]
 
 source_file="res://assets/blocked.wav"
-source_md5="60c3529046a096a154d09e61e8e75461"
-
 dest_files=[ "res://.import/blocked.wav-373e33f2694486848a8e0d3a02e11988.sample" ]
-dest_md5="264777d9b8d84716045313315ef07e58"
 
 [params]
 

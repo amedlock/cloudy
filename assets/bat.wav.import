@@ -7,10 +7,7 @@ path="res://.import/bat.wav-ac63582c7add97f5be4a3f9989dd220d.sample"
 [deps]
 
 source_file="res://assets/bat.wav"
-source_md5="c72dff5e01d71553ff8005844dcfba1f"
-
 dest_files=[ "res://.import/bat.wav-ac63582c7add97f5be4a3f9989dd220d.sample" ]
-dest_md5="9486d1a459d010e50f06d86bed5ea577"
 
 [params]
 

@@ -6,32 +6,19 @@
 [ext_resource path="res://game/dungeon/enemies.gd" type="Script" id=4]
 
 [node name="DungeonMode" type="Node2D"]
-
 script = ExtResource( 1 )
-_sections_unfolded = [ "Visibility" ]
 
-[node name="Player" parent="." index="0" instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 2 )]
 
-[node name="Tiles" type="Node2D" parent="." index="1"]
-
+[node name="Tiles" type="Node2D" parent="."]
 script = ExtResource( 3 )
 
-[node name="Dark" type="Node2D" parent="." index="2"]
-
+[node name="Dark" type="Node2D" parent="."]
 script = ExtResource( 3 )
 
-[node name="Items" type="Node2D" parent="." index="3"]
+[node name="Items" type="Node2D" parent="."]
 
-[node name="Enemies" type="Node2D" parent="." index="4"]
-
+[node name="Enemies" type="Node2D" parent="."]
 script = ExtResource( 4 )
 
-[node name="Audio" type="AudioStreamPlayer" parent="." index="5"]
-
-stream = null
-volume_db = 0.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-
+[node name="Audio" type="AudioStreamPlayer" parent="."]

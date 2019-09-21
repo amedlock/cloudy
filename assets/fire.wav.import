@@ -7,10 +7,7 @@ path="res://.import/fire.wav-96b8380b190d74f02131b4937b3a722d.sample"
 [deps]
 
 source_file="res://assets/fire.wav"
-source_md5="8f3f57549ebb95ea87269040892b0218"
-
 dest_files=[ "res://.import/fire.wav-96b8380b190d74f02131b4937b3a722d.sample" ]
-dest_md5="d491ae2865ad93b95fc18c9008e4aafe"
 
 [params]
 

@@ -43,7 +43,7 @@ func set_icon( i=null ):
 		i = icons[ lives ]
 
 		
-func update( p ):
+func update_info( p ):
 	self.lives = p.lives
 	for x in p.inventory:
 		if not self.inventory.has( x ):

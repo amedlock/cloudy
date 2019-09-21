@@ -7,10 +7,7 @@ path="res://.import/dragon_warn.wav-a3055fa47a9eca94d7acede50217f248.sample"
 [deps]
 
 source_file="res://assets/dragon_warn.wav"
-source_md5="e9fde8b225597a76d1b1eec58b96da98"
-
 dest_files=[ "res://.import/dragon_warn.wav-a3055fa47a9eca94d7acede50217f248.sample" ]
-dest_md5="01b428bc9e071a1ace5cc469b72e03fd"
 
 [params]
 

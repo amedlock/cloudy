@@ -24,7 +24,7 @@ func _ready():
 	if !initialized:
 		initialized = true
 		randomize()
-		random = Util.make_random( randi() )
+		random = Util.Random.new()
 		grid.resize( 20 , 16 )
 		grid.at( 18, 7 ).tile_type = "final"
 		grid.at( 19, 7 ).tile_type = "final"
@@ -237,7 +237,7 @@ func move_player( dx, dy ):
 		$Audio.play()
 		
 		
-func _process(delta):
+func _process(_delta):
 	if game_state=="playing":
 		return
 	if game_state=="won":
@@ -252,5 +252,5 @@ func _process(delta):
 		player.set_icon("grave")
 
 func exit_dungeon(p):
-	self.player.update(p)
+	self.player.update_info(p)
 	$Camera.current = true

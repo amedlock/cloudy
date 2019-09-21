@@ -7,10 +7,7 @@ path="res://.import/pickup.wav-cfde5bfd9ba44dc659558aa4ba5b2574.sample"
 [deps]
 
 source_file="res://assets/pickup.wav"
-source_md5="e4de44901c593ddf065419d251c30f27"
-
 dest_files=[ "res://.import/pickup.wav-cfde5bfd9ba44dc659558aa4ba5b2574.sample" ]
-dest_md5="dcb3eaa50037601e97d29a3a31bfc00b"
 
 [params]
 

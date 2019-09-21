@@ -7,10 +7,7 @@ path="res://.import/death.wav-c820f672735e25372580de5d3f7021aa.sample"
 [deps]
 
 source_file="res://assets/death.wav"
-source_md5="ccc28d15b561f0c25e3a535548728df4"
-
 dest_files=[ "res://.import/death.wav-c820f672735e25372580de5d3f7021aa.sample" ]
-dest_md5="6ca5498cccca4a9c49442540e1822167"
 
 [params]
 

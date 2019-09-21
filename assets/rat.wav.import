@@ -7,10 +7,7 @@ path="res://.import/rat.wav-ad7f8349a8a4f330214deed4d5681ba1.sample"
 [deps]
 
 source_file="res://assets/rat.wav"
-source_md5="ace181906f97c808d6ad54423c15321b"
-
 dest_files=[ "res://.import/rat.wav-ad7f8349a8a4f330214deed4d5681ba1.sample" ]
-dest_md5="f658e4d37ffbf25a3199106724b3d4be"
 
 [params]
 

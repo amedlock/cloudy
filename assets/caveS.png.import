@@ -3,20 +3,21 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/caveS.png-ea27485994b2d690be7c21abfa3bee77.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/caveS.png"
-source_md5="a16041d70be2a31ed053bef940fd1300"
-
 dest_files=[ "res://.import/caveS.png-ea27485994b2d690be7c21abfa3bee77.stex" ]
-dest_md5="175995552250380d8a6ceb0650af165f"
 
 [params]
 
 compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 flags/filter=false
@@ -26,6 +27,7 @@ flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
+process/invert_color=false
 stream=false
 size_limit=0
 detect_3d=true

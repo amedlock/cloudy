@@ -1,0 +1,18 @@
+
+
++ damage sound
+
+? add blob 
+? better rat and demon gfx?
+
+
+X add bat, make killable
+X check win condition
+X monsters wake if shot fired nearby
+! make dungeon cells pseudo 3d  (when rotated the visuals are wrong)
+X limit firing to 1 arrow each second, not one at a time
+X make arrows get used up
+X Monster damage needs tweaking and balance
+X Monster damage is wonky, only happens if player hits enemy, not vice versa
+X Player death animation
+X Monster doesn't sleep after kill(unless darkness restored)
