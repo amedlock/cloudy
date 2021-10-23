@@ -76,7 +76,7 @@ class GridUtil:
 		return int( x + (y * width))
 
 	func index_to_coord( index ):
-    	return Vector2( int(index % width), int(index/width) )
+		return Vector2( int(index % width), int(index/width) )
 	
 	func coord_contains_pos( x, y, pos ):
 		var p = coord_to_pos(x,y)

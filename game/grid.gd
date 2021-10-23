@@ -1,21 +1,21 @@
 extends Node2D
 
 # this script maps a grid coordinate space to world(or pixel) space
-# after initialization it keeps a list of wxh cells 
+# after initialization it keeps a list of wxh cells
 
 # width and height of grid
-var width 
-var height 
+var width
+var height
 
 # each cell in the grid is this size
-var cell_size 
+var cell_size
 
 # convenience lookup by cell index
 var cells = {}
 
 
 class Cell:
-	var coord 
+	var coord
 	var pos
 	var index = 0
 	var size = null
@@ -26,16 +26,16 @@ class Cell:
 
 	func center():
 		return pos + Vector2( size/2, size/2 ) # dangerous
-	
+
 
 func free_nodes():
 	for v in cells.values():
-		if v.node==null: 
+		if v.node==null:
 			continue
 		v.node.queue_free()
 		self.remove_child( v.node )
-		v.node = null		
-		
+		v.node = null
+
 
 
 func init( w, h, sz ):
@@ -70,11 +70,11 @@ func at_index( n ):
 
 # returns the cell at position p (world space)
 func at_pos(p):
-  var c = pos_to_coord(p)
-  if valid( c.x, c.y ):
-    return at( c.x, c.y )
-  else:
-    return null
+	var c = pos_to_coord(p)
+	if valid( c.x, c.y ):
+		return at( c.x, c.y )
+	else:
+		return null
 
 
 func nearby_cells(x, y):
