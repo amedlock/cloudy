@@ -45,8 +45,8 @@ func set_icon( i=null ):
 		
 func update_info( p ):
 	self.lives = p.lives
-	for x in p.inventory:
-		if not self.inventory.has( x ):
-			self.inventory.append( x )
+	for it in p.inventory:
+		if not self.inventory.has( it ):
+			self.inventory.append( it )
 	self.set_icon( self.lives )
-			
+

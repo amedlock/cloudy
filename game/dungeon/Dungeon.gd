@@ -47,7 +47,7 @@ func _input(event):
 		get_tree().quit()
 
 
-func _process(delta):
+func _process(_delta):
 	for e in get_tree().get_nodes_in_group("enemy"):
 		if e.state=="sleep":
 			var dist = player.position.distance_to( e.position ) 
@@ -341,7 +341,6 @@ func player_died():
 	for e in $Enemies.all_enemies():
 		e.wait()
 	player.lives -= 1
-	player.pause_mode
 	var s = smoke.instance()
 	self.add_child( s )
 	s.position = player.position

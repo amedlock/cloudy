@@ -31,13 +31,13 @@ func move_towards( e, pt, delta ):
 		return true
 	var d2 = e.move_and_slide( d.normalized() * e.speed )
 	
-func move_along_path( e, dist, delta ):
+func move_along_path( e, delta ):
 	var next = e.path[0]
 	var next_dist = e.position.distance_to( next )
 	if next_dist <= 4:
 		e.path.remove(0)
 	else:
-		move_towards( e, next, delta )	
+		move_towards( e, next, delta )
 	
 
 func chase( e, dist, delta ):
@@ -47,7 +47,7 @@ func chase( e, dist, delta ):
 	elif e.path.empty():
 		e.state = "search"
 	else:
-		move_along_path( e, dist, delta )
+		move_along_path( e, delta )
 
 
 func attack( e, delta ):
@@ -68,9 +68,9 @@ func add_blood( e ):
 
 
 func heard_shot():
-	var grid = get_parent().get_node("Tiles")
-	var c = grid.pos_to_coord( player.position )
-	for c2 in grid.nearby_cells( c.x, c.y ):
+	var tiles = get_parent().get_node("Tiles")
+	var c = tiles.pos_to_coord( player.position )
+	for c2 in tiles.nearby_cells( c.x, c.y ):
 		for e in self.all_enemies():
 			if c2.contains_point( e.position ):
 				e.awaken()

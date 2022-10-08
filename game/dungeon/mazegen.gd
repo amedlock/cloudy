@@ -114,7 +114,6 @@ func generate( sx, sy ):
 	for b in block:  b.reset()
 	var near = []		
 	mark( sx, sy, near )
-	var total = Width * Height	
 	while not near.empty():
 		var cur = random.choice( near )
 		assert( cur!=null )

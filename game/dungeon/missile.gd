@@ -15,6 +15,6 @@ func _physics_process(delta):
 	if obj!=shooter:
 		obj.hit(self)
 
-func hit(other):
+func hit(_other):
 	pass
 
